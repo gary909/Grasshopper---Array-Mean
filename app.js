@@ -1,5 +1,6 @@
 var findAverage = function (nums) {
-    // Code here
+    const sum = nums.reduce((partialSum, a) => partialSum + a, 0);
+    return sum / nums.length;
 }
 
 console.log(findAverage([1])); // 1
